@@ -25,7 +25,7 @@ services:
       - "5005:5000"
     environment:
       NODE_ENV: production
-      MONGODB_URI: mongodb://admin:admin123@mongodb:27017/ish-soati
+      MONGODB_URI: mongodb://admin:admin123@mongodb:27017/ish-soati?authSource=admin
       JWT_SECRET: ${JWT_SECRET:-your-secret-key-change-in-production}
       CORS_ORIGIN: http://38.247.134.248:5173
       PORT: 5000
