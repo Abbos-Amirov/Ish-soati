@@ -22,7 +22,7 @@ services:
       dockerfile: Dockerfile
     container_name: ish-soati-backend
     ports:
-      - "5000:5000"
+      - "5005:5000"
     environment:
       NODE_ENV: production
       MONGODB_URI: mongodb://admin:admin123@mongodb:27017/ish-soati
