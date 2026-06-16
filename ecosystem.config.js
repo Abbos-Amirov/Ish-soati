@@ -7,7 +7,8 @@ module.exports = {
       exec_mode: 'cluster',
       env: {
         NODE_ENV: 'production',
-        PORT: 3000,
+        PORT: 5000,
+        CORS_ORIGIN: 'http://38.247.134.248:5173',
       },
       error_file: './logs/err.log',
       out_file: './logs/out.log',

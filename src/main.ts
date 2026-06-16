@@ -21,8 +21,9 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     }),
   );
+  const corsOrigin = config.get<string>('corsOrigin', 'http://localhost:5173');
   app.enableCors({
-    origin: config.get<string>('corsOrigin'),
+    origin: corsOrigin.split(',').map((o) => o.trim()),
     credentials: true,
   });
 
